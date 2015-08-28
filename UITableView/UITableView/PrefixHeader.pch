@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  UITableView
+//
+//  Created by liuxhui on 15/8/22.
+//  Copyright (c) 2015年 HHL. All rights reserved.
+//
+
+#ifndef UITableView_PrefixHeader_pch
+#define UITableView_PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import "UINavigationController+JZExtension.h"
+#endif
+
+#endif

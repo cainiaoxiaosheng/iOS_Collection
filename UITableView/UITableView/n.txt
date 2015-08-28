@@ -1,0 +1,13 @@
+//获取路径
+    NSString * newPath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"jeep_1"] ofType:@"txt"];
+
+／／从路径获取
+    NSFileHandle * fileHandle = [NSFileHandle fileHandleForReadingAtPath:newPath];
+
+／／转换成二进制
+
+    NSData * data = [fileHandle readDataToEndOfFile];
+
+／／把二进制转化成图片
+
+    NSString * str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
